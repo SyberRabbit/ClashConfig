@@ -160,5 +160,5 @@ rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - PROCESS-NAME,firefox.exe,手动选择兜底国家
-  - PROCESS-NAME,unigram.exe,手动选择兜底国家
+  - PROCESS-NAME,Telegram.exe,手动选择兜底国家
   - MATCH,DIRECT
