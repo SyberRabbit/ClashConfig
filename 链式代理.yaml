@@ -30,6 +30,7 @@ proxy-groups:
       - "韩国-节点组"
       - "美国-节点组"
       - "落地机-通用"
+      
   - name: "链式代理-通用"
     type: relay
     proxies:
@@ -40,6 +41,7 @@ proxy-groups:
     proxies:
       - "港台日新韩-节点组"
       - "落地机-美国"
+      
   - name: "GPT-节点组"
     type: select
     include-all: true
@@ -60,12 +62,14 @@ proxy-groups:
     tolerance: 20
     timeout: 1000
     filter: "(^(?!.*游戏)(?!.*H01)(?!.*美国-IEPL).*美国.*)"
+    
   - name: "落地机-通用"
     type: select
     include-all: true
   - name: "落地机-美国"
     type: select
     include-all: true
+    
   - name: "港台日新韩-节点组"
     type: fallback
     include-all: true
