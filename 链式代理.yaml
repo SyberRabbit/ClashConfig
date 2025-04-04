@@ -31,12 +31,22 @@ proxy-groups:
       - "美国-节点组"
   - name: "链式代理-通用"
     type: select
-    dialer-proxy : "港台日新韩-节点组"
+    dialer-proxy : "链式中间节点"
     include-all: true
   - name: "链式代理-美国"
     type: select
-    dialer-proxy : "港台日新韩-节点组"
+    dialer-proxy : "链式中间节点"
     include-all: true
+  - name: "链式中间节点"
+    type: select
+    proxies:
+      - "港台日新韩-节点组"
+      - "香港-节点组"
+      - "台湾-节点组"
+      - "日本-节点组"
+      - "新加坡-节点组"
+      - "韩国-节点组"
+      - "美国-节点组"
   - name: "GPT-节点组"
     type: select
     include-all: true
