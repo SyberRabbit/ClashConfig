@@ -17,6 +17,7 @@ dns:
   use-system-hosts: false
 profile:
   store-selected: true
+
 proxy-groups:
   - name: "手动选择兜底国家"
     type: select
@@ -29,14 +30,7 @@ proxy-groups:
       - "新加坡-节点组"
       - "韩国-节点组"
       - "美国-节点组"
-  - name: "链式代理-通用"
-    type: select
-    dialer-proxy : "链式中间节点"
-    include-all: true
-  - name: "链式代理-美国"
-    type: select
-    dialer-proxy : "链式中间节点"
-    include-all: true
+      - "全部节点"
   - name: "链式中间节点"
     type: select
     proxies:
@@ -47,6 +41,17 @@ proxy-groups:
       - "新加坡-节点组"
       - "韩国-节点组"
       - "美国-节点组"
+  - name: "链式代理-通用"
+    type: select
+    include-all: true
+    filter: "ss"
+  - name: "链式代理-美国"
+    type: select
+    include-all: true
+    filter: "233boy.*"
+  - name: "全部节点"
+    type: select
+    include-all: true
   - name: "GPT-节点组"
     type: select
     include-all: true
